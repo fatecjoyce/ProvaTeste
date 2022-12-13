@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="lista">
+        <h1>Lista de Usuários</h1>
+        <h3>Total de usuários: 10</h3>
+        <button (click)="getUser()">Exibir Usuários</button>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+            </tr>
+            
+            <tr *ngFor="let user of user">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
